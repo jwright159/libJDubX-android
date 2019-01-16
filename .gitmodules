@@ -1,0 +1,3 @@
+[submodule "libJDubX"]
+	path = libJDubX
+	url = https://github.com/jwright159/libJDubX
