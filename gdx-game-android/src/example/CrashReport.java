@@ -1,4 +1,4 @@
-package wrightway.gdx;
+package example;
 
 import android.app.*;
 import android.content.*;
@@ -10,8 +10,6 @@ public class CrashReport extends Activity{
 	protected void onCreate(Bundle savedInstanceState){
 		super.onCreate(savedInstanceState);
 		
-		//Gdx.files.external("/WrightWay/Tenebrae/error.txt").writeString("did a do", true);
-		
 		AlertDialog.Builder builder = new AlertDialog.Builder(this);
 		builder.setTitle("Crash!");
 		builder.setMessage(getIntent().getStringExtra("message"));
@@ -22,7 +20,5 @@ public class CrashReport extends Activity{
 				}
 		});
 		builder.show();
-		
-		//Gdx.files.external("/WrightWay/Tenebrae/error.txt").writeString("did a do again", true);
 	}
 }

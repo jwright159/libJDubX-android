@@ -1,4 +1,4 @@
-package wrightway.gdx;
+package example;
 
 import android.content.pm.*;
 import android.os.*;
@@ -10,18 +10,14 @@ import android.app.*;
 import android.content.*;
 import java.util.*;
 import com.badlogic.gdx.*;
+import wrightway.gdx.Log;
 
 public class MainActivity extends AndroidApplication{
     @Override
     public void onCreate(Bundle savedInstanceState){
         super.onCreate(savedInstanceState);
 
-		/*try{
-		 Runtime.getRuntime().exec("logcat -c");
-		 }catch(IOException e){}*/
-
 		final Thread.UncaughtExceptionHandler exhand = Thread.getDefaultUncaughtExceptionHandler();
-		//Log.d("Tenebrae","HANDLER: "+exhand);
 
 		Thread.setDefaultUncaughtExceptionHandler(new Thread.UncaughtExceptionHandler(){
 				@Override
@@ -33,16 +29,12 @@ public class MainActivity extends AndroidApplication{
 					Log.error(message += sw.toString());
 					pw.close();
 
-					Gdx.files.external("/WrightWay/error.txt").writeString(message, false);
-
 					Context context = getApplicationContext();
 					Intent registerActivity = new Intent(context, CrashReport.class);
 					registerActivity.putExtra("message", message);
 					registerActivity.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
 					registerActivity.addFlags(Intent.FLAG_ACTIVITY_NEW_DOCUMENT);
 					context.startActivity(registerActivity);
-					
-					Gdx.files.external("/WrightWay/Tenebrae/error.txt").writeString("did a do2", true);
 					
 					// make sure we die, otherwise the app will hang ...
 					//android.os.Process.killProcess(android.os.Process.myPid());
