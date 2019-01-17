@@ -15,4 +15,3 @@ git checkout master
 - In each of those files, change the package accordingly
 - In the androidmanifest, change the package, version, and/or orientations
 - Finally, in your gdx-game package, make a new class that extends WScreen and replace the erroneous reference tonit in MyGdxGame.java
-- Probably also delete gdx-game-android/gen/example
