@@ -9,7 +9,7 @@ public class MyGdxGame extends Game{
 	public void create(){
 		game = this;
 		Gdx.app.setLogLevel(Application.LOG_DEBUG);
-		setScreen(new ScreenExtendingWScreen());
+		setScreen(new Example());
 	}
 
 	@Override
