@@ -5,7 +5,9 @@ Quickstart
 - In the console:
 ```
 cd {wherever}
-git clone {this thing}
+git clone https://github.com/jwright159/libJDubX-android {project name}
+cd {project name}
+git checkout -b {project name}
 git branch -u origin/master
 git submodule init
 git submodule update --remote
