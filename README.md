@@ -11,7 +11,7 @@ cd ..
 git remote rename origin quickstart
 git remote set-url --push DISABLED
 ```
-- - If you want to use a new repo, do:
+  - If you want to use a new repo, do:
 ```
 git remote add origin {new repo url}
 git push -u origin master
