@@ -14,6 +14,7 @@ Quickstart
   - If you want to use a new repo, do:
     ```
     git remote add origin {new repo url}
+    git pull origin master --allow-unrelated-histories
     git push -u origin master
     ```
 - Move the files in gdx-game/src/example and gdx-game-android/src/example to your own package
