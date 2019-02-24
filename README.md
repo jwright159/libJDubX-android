@@ -9,7 +9,7 @@ Quickstart
   git checkout master
   cd ..
   git remote rename origin quickstart
-  git remote set-url --push DISABLED
+  git remote set-url --push quickstart DISABLED
   ```
   - If you want to use a new repo, do:
     ```
