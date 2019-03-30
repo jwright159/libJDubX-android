@@ -17,7 +17,7 @@ Quickstart
     git pull origin master --allow-unrelated-histories
     git push -u origin master
     ```
-- Move the files in gdx-game/src/example and gdx-game-android/src/example to your own package
+- Move the files in `gdx-game/src/com/example` and `gdx-game-android/src/com/example` to your own package
 - In each of those files, change the example packages and names accordingly
-- In the androidmanifest, change the package, version, and/or orientations
-- Take over Example.java
+- In `gdx-game-android/AndroidManifest.xml`, change the package, version, and/or orientations
+- Take over `gdx-game/src/{package}/ExampleScreen.java`

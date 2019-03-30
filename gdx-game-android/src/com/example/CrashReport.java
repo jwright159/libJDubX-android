@@ -1,4 +1,4 @@
-package example;
+package com.example;
 
 import android.app.*;
 import android.content.*;

@@ -1,12 +1,12 @@
-package example;
+package com.example;
 
 import wrightway.gdx.*;
 import com.badlogic.gdx.*;
 import com.badlogic.gdx.input.*;
 
-public class Example extends WScreen{
-	public Example(){
-		Log.setLogFile(Gdx.files.external());
+public class ExampleScreen extends WScreen{
+	public ExampleScreen(){
+		Log.setLogFile(Gdx.files.external("libJDubX.log"));
 		Log.setVerbosity((byte)0b000_1111);
 		
 		Gdx.input.setCatchBackKey(true);

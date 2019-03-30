@@ -1,4 +1,4 @@
-package example;
+package com.example;
 
 import android.content.pm.*;
 import android.os.*;
@@ -45,6 +45,6 @@ public class MainActivity extends AndroidApplication{
 
         AndroidApplicationConfiguration cfg = new AndroidApplicationConfiguration();
 
-        initialize(new example.MyGdxGame(), cfg);
+        initialize(new com.example.MyGdxGame(), cfg);
     }
 }
