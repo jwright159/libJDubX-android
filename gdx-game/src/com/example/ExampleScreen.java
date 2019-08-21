@@ -4,7 +4,7 @@ import wrightway.gdx.*;
 import com.badlogic.gdx.*;
 import com.badlogic.gdx.input.*;
 
-public class ExampleScreen extends WScreen{
+public class ExampleScreen extends GameScreen{
 	public ExampleScreen(){
 		Log.setLogFile(Gdx.files.external("libJDubX.log"));
 		Log.setVerbosity((byte)0b000_1111);
