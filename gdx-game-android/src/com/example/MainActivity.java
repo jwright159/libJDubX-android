@@ -10,7 +10,7 @@ import android.app.*;
 import android.content.*;
 import java.util.*;
 import com.badlogic.gdx.*;
-import wrightway.gdx.Log;
+import com.github.jwright159.gdx.Log;
 
 public class MainActivity extends AndroidApplication{
     @Override

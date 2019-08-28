@@ -1,6 +1,7 @@
 package com.example;
 
-import wrightway.gdx.*;
+import com.github.jwright159.gdx.Log;
+import com.github.jwright159.gdx.screen.GameScreen;
 import com.badlogic.gdx.*;
 import com.badlogic.gdx.input.*;
 
