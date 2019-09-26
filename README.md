@@ -2,15 +2,8 @@
 Quickstart
 
 ## How to:
-- In the console:
-  ```
-  git clone --recursive {this repo url} {new project name}
-  cd {project name}/libJDubX/
-  git checkout master
-  cd ..
-  git remote rename origin quickstart
-  git remote set-url --push quickstart DISABLED
-  ```
+- Clone the git project using the `--recursive` option
+- `cd` into the project folder and run `checkout.sh`
   - If you want to use a new repo, do:
     ```
     git remote add origin {new repo url}
