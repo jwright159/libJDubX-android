@@ -14,11 +14,14 @@ public class ExampleScreen extends GameScreen{
 		getMultiplexer().addProcessor(0, new InputAdapter(){
 			@Override
 			public boolean keyDown(int keycode){
-				if(keycode == Input.Keys.BACK){
-					Gdx.app.exit();
-					return true;
+				switch(keycode){
+					case Input.Keys.BACK:
+						Gdx.app.exit();
+						return true;
+					
+					default:
+						return false;
 				}
-				return false;
 			}
 		});
 		getMultiplexer().addProcessor(2, new GestureDetector(new GestureDetector.GestureAdapter(){
